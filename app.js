@@ -13,6 +13,6 @@ app.get('/sistemas', function(req, res){
     res.sendFile(__dirname + '/app/views/sistemas.html');
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT,function(){
     console.log('Servidor ON')
 });
