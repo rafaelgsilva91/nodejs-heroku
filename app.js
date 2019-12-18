@@ -14,5 +14,5 @@ app.get('/sistemas', function(req, res){
 });
 
 app.listen(process.env.PORT,function(){
-    console.log('Servidor ON')
+    console.log('Servidor ON'+process.env.PORT)
 });
