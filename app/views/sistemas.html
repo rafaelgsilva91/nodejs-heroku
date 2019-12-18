@@ -25,7 +25,7 @@
       var tableContent = '';
 
       // jQuery AJAX / JSON
-      $.getJSON('/monitoramentoSites', function (data) {
+      $.getJSON('/listarSistemas', function (data) {
         $.each(data.apps, function () {
           tableContent += "<div class='col-4 " + (this.status ? "sistema-ativo" : "sistema-fora") + "'>";
           tableContent += "<div class='sistema'>";
@@ -60,16 +60,7 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link falha" href="sistemas">Sistemas</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link falha" href="aceleradores">Aceleradores</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link falha" href="requerimentos">Requerimentos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link normal" href="#">Relatórios</a>
-          </li>
+          </li>          
         </ul>
       </div>
     </div>
