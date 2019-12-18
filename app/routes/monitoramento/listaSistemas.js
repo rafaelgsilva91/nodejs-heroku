@@ -11,9 +11,9 @@ apps.push({nome : 'SITE - 2ª INSTÂNCIA', url : 'http://segundainstancia.ms.def
 module.exports = function(app){
     
     /**
-     * @description Monitorar as aplicações
+     * @description listar aplicações
      **/
-    app.get('/monitoramentoSites', function(req,res){
+    app.get('/listarSistemas', function(req,res){
        apps.forEach(function (app) { 
             request(app.url, function (error, response, body) {
                 if(response && response.statusCode){

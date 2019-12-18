@@ -2,7 +2,6 @@
 
 @author Rafael Gouveia da Silva
 @version 1.0
-@description Folha de pagamento da DPGE-MS
 **/
 var app = require('./config/server.js');
 
