@@ -6,7 +6,7 @@
   "dependencies": {
     "consign": "^0.1.6",
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-validator": "^5.3.1",
     "mssql": "^5.0.3",
     "ping": "^0.2.2"
